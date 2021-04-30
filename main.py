@@ -16,7 +16,7 @@ def type_writer(x):
 def run_sim():
     '''Run English Premier League Sim'''
     higher = 1.148698355
-    lower = 0.8705505633
+    lower = 0.9705505633
 
     arsenal = Team("Arsenal", 79)
     aston_villa = Team("Aston Villa", 76)
@@ -135,7 +135,6 @@ def run_sim():
         DRAWS += [0]
         LOSSES += [0]
 
-    # PLAYING ALL TEAMS AGAINST EACH OTHER AND UPDATING STATISTICS
     for x in range(league_size):
         print("========================================")
         print(teams[x].name + "'s home games: ")
@@ -173,7 +172,6 @@ def run_sim():
             else:
                 pass
 
-    # ASSIGNING STATISTICS TO EACH TEAM
     for x in range(league_size):
         teams[x].points = POINTS[x]
         teams[x].gf = GOALS_FOR[x]
